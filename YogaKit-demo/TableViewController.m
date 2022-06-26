@@ -11,6 +11,7 @@
 #import "Demo2ViewController.h"
 #import "Demo3ViewController.h"
 #import "Demo4ViewController.h"
+#import "Demo5ViewController.h"
 
 @interface TableViewController () {
     NSArray<DemoModel *> *_items;
@@ -31,7 +32,8 @@
         [DemoModel modelWithTitle:NSLocalizedString(@"单个居中", nil) class:Demo1ViewController.class],
         [DemoModel modelWithTitle:NSLocalizedString(@"九宫格布局", nil) class:Demo2ViewController.class],
         [DemoModel modelWithTitle:NSLocalizedString(@"滚动视图", nil) class:Demo3ViewController.class],
-        [DemoModel modelWithTitle:NSLocalizedString(@"模拟 Twitter 时间线卡片", nil) class:Demo4ViewController.class]
+        [DemoModel modelWithTitle:NSLocalizedString(@"模拟 Twitter 时间线卡片", nil) class:Demo4ViewController.class],
+        [DemoModel modelWithTitle:NSLocalizedString(@"文字输入框", nil) class:Demo5ViewController.class]
     ];
 }
 

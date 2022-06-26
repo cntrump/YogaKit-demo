@@ -21,8 +21,10 @@
 		1571753A2864AA42004C9370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157175392864AA42004C9370 /* Assets.xcassets */; };
 		1571753D2864AA42004C9370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1571753B2864AA42004C9370 /* LaunchScreen.storyboard */; };
 		157175402864AA42004C9370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1571753F2864AA42004C9370 /* main.m */; };
+		159391EA286876A400F553AD /* SafeAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 159391E9286876A400F553AD /* SafeAreaView.m */; };
 		15F2627B2866C575004606A5 /* Demo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2627A2866C575004606A5 /* Demo4ViewController.m */; };
 		15F2627F2866F53F004606A5 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2627E2866F53F004606A5 /* UIColor+RGB.m */; };
+		15F2628528675809004606A5 /* Demo5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2628428675809004606A5 /* Demo5ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +51,14 @@
 		1571753C2864AA42004C9370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1571753E2864AA42004C9370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1571753F2864AA42004C9370 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		159391E8286876A400F553AD /* SafeAreaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeAreaView.h; sourceTree = "<group>"; };
+		159391E9286876A400F553AD /* SafeAreaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeAreaView.m; sourceTree = "<group>"; };
 		15F262792866C575004606A5 /* Demo4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4ViewController.h; sourceTree = "<group>"; };
 		15F2627A2866C575004606A5 /* Demo4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4ViewController.m; sourceTree = "<group>"; };
 		15F2627D2866F53F004606A5 /* UIColor+RGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
 		15F2627E2866F53F004606A5 /* UIColor+RGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		15F2628328675809004606A5 /* Demo5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo5ViewController.h; sourceTree = "<group>"; };
+		15F2628428675809004606A5 /* Demo5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo5ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 				1528FDA928653480004FB121 /* Demo3ViewController.m */,
 				15F262792866C575004606A5 /* Demo4ViewController.h */,
 				15F2627A2866C575004606A5 /* Demo4ViewController.m */,
+				15F2628328675809004606A5 /* Demo5ViewController.h */,
+				15F2628428675809004606A5 /* Demo5ViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 		1571752C2864AA42004C9370 /* YogaKit-demo */ = {
 			isa = PBXGroup;
 			children = (
+				159391E72868765700F553AD /* View */,
 				15F2627C2866F51E004606A5 /* Utils */,
 				1528FD9E286528C5004FB121 /* Model */,
 				15126FF62864AFA3001DB9C7 /* Cell */,
@@ -138,6 +147,15 @@
 				1571753F2864AA42004C9370 /* main.m */,
 			);
 			path = "YogaKit-demo";
+			sourceTree = "<group>";
+		};
+		159391E72868765700F553AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				159391E8286876A400F553AD /* SafeAreaView.h */,
+				159391E9286876A400F553AD /* SafeAreaView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		15F2627C2866F51E004606A5 /* Utils */ = {
@@ -228,8 +246,10 @@
 				157175352864AA42004C9370 /* TableViewController.m in Sources */,
 				1528FDA1286528E0004FB121 /* DemoModel.m in Sources */,
 				1528FD9D2865250E004FB121 /* BaseViewController.m in Sources */,
+				15F2628528675809004606A5 /* Demo5ViewController.m in Sources */,
 				15126FF92864AFB9001DB9C7 /* DemoCell.m in Sources */,
 				1571752F2864AA42004C9370 /* AppDelegate.m in Sources */,
+				159391EA286876A400F553AD /* SafeAreaView.m in Sources */,
 				1528FDA428652BDA004FB121 /* Demo1ViewController.m in Sources */,
 				1528FDA728652F03004FB121 /* Demo2ViewController.m in Sources */,
 				15F2627F2866F53F004606A5 /* UIColor+RGB.m in Sources */,
