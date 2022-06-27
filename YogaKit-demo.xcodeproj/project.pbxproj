@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15126FF32864AE21001DB9C7 /* Yoga in Frameworks */ = {isa = PBXBuildFile; productRef = 15126FF22864AE21001DB9C7 /* Yoga */; };
-		15126FF52864AE21001DB9C7 /* YogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15126FF42864AE21001DB9C7 /* YogaKit */; };
 		15126FF92864AFB9001DB9C7 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15126FF82864AFB9001DB9C7 /* DemoCell.m */; };
 		1528FD9D2865250E004FB121 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528FD9C2865250E004FB121 /* BaseViewController.m */; };
 		1528FDA1286528E0004FB121 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528FDA0286528E0004FB121 /* DemoModel.m */; };
 		1528FDA428652BDA004FB121 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528FDA328652BDA004FB121 /* Demo1ViewController.m */; };
 		1528FDA728652F03004FB121 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528FDA628652F03004FB121 /* Demo2ViewController.m */; };
 		1528FDAA28653480004FB121 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528FDA928653480004FB121 /* Demo3ViewController.m */; };
+		156C136928692712004A6B22 /* Yoga in Frameworks */ = {isa = PBXBuildFile; productRef = 156C136828692712004A6B22 /* Yoga */; };
+		156C136B28692712004A6B22 /* YogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 156C136A28692712004A6B22 /* YogaKit */; };
+		156C136D28692712004A6B22 /* YogaKit.Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 156C136C28692712004A6B22 /* YogaKit.Swift */; };
 		1571752F2864AA42004C9370 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1571752E2864AA42004C9370 /* AppDelegate.m */; };
 		157175322864AA42004C9370 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 157175312864AA42004C9370 /* SceneDelegate.m */; };
 		157175352864AA42004C9370 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157175342864AA42004C9370 /* TableViewController.m */; };
@@ -66,8 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15126FF32864AE21001DB9C7 /* Yoga in Frameworks */,
-				15126FF52864AE21001DB9C7 /* YogaKit in Frameworks */,
+				156C136928692712004A6B22 /* Yoga in Frameworks */,
+				156C136B28692712004A6B22 /* YogaKit in Frameworks */,
+				156C136D28692712004A6B22 /* YogaKit.Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +186,9 @@
 			);
 			name = "YogaKit-demo";
 			packageProductDependencies = (
-				15126FF22864AE21001DB9C7 /* Yoga */,
-				15126FF42864AE21001DB9C7 /* YogaKit */,
+				156C136828692712004A6B22 /* Yoga */,
+				156C136A28692712004A6B22 /* YogaKit */,
+				156C136C28692712004A6B22 /* YogaKit.Swift */,
 			);
 			productName = "YogaKit-demo";
 			productReference = 1571752A2864AA42004C9370 /* YogaKit-demo.app */;
@@ -215,7 +218,7 @@
 			);
 			mainGroup = 157175212864AA42004C9370;
 			packageReferences = (
-				15126FF12864AE21001DB9C7 /* XCRemoteSwiftPackageReference "yoga" */,
+				156C136728692712004A6B22 /* XCRemoteSwiftPackageReference "yoga" */,
 			);
 			productRefGroup = 1571752B2864AA42004C9370 /* Products */;
 			projectDirPath = "";
@@ -460,26 +463,31 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		15126FF12864AE21001DB9C7 /* XCRemoteSwiftPackageReference "yoga" */ = {
+		156C136728692712004A6B22 /* XCRemoteSwiftPackageReference "yoga" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/cntrump/yoga.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.19.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		15126FF22864AE21001DB9C7 /* Yoga */ = {
+		156C136828692712004A6B22 /* Yoga */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 15126FF12864AE21001DB9C7 /* XCRemoteSwiftPackageReference "yoga" */;
+			package = 156C136728692712004A6B22 /* XCRemoteSwiftPackageReference "yoga" */;
 			productName = Yoga;
 		};
-		15126FF42864AE21001DB9C7 /* YogaKit */ = {
+		156C136A28692712004A6B22 /* YogaKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 15126FF12864AE21001DB9C7 /* XCRemoteSwiftPackageReference "yoga" */;
+			package = 156C136728692712004A6B22 /* XCRemoteSwiftPackageReference "yoga" */;
 			productName = YogaKit;
+		};
+		156C136C28692712004A6B22 /* YogaKit.Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156C136728692712004A6B22 /* XCRemoteSwiftPackageReference "yoga" */;
+			productName = YogaKit.Swift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

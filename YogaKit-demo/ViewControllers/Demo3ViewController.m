@@ -39,10 +39,7 @@
     ]];
 
     [contentView.yoga configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.paddingLeft = YGPointValue(16);
-        layout.paddingRight = YGPointValue(16);
-        layout.paddingTop = YGPointValue(24 - 16);
-        layout.paddingBottom = YGPointValue(24);
+        layout.paddings = UIEdgeInsetsMake(24 - 16, 16, 24, 16);
     }];
 
     for (NSString *text in _paragraphItems) {

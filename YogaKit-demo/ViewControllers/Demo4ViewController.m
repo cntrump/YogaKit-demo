@@ -48,8 +48,7 @@
     avatarView.backgroundColor = RGB(0xe55e44);
     [headerView addSubview:avatarView];
     [avatarView.yoga configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.width = YGPointValue(48);
-        layout.height = YGPointValue(48);
+        layout.size = CGSizeMake(48, 48);
     }];
 
     UIView *nameContainer = [[UIView alloc] init];
@@ -83,8 +82,7 @@
     moreView.tintColor = RGB(0x71767b);
     [headerView addSubview:moreView];
     [moreView.yoga configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.width = YGPointValue(19);
-        layout.height = YGPointValue(19);
+        layout.size = CGSizeMake(19, 19);
     }];
 
     UIView *bodyView = [[UIView alloc] init];
@@ -121,8 +119,7 @@
         UIImageView *iconView = [[UIImageView alloc] initWithImage:image];
         [itemView addSubview:iconView];
         [iconView.yoga configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-            layout.width = YGPointValue(19);
-            layout.height = YGPointValue(19);
+            layout.size = CGSizeMake(19, 19);
         }];
 
         if (count > 0) {

@@ -25,8 +25,7 @@
     view1.backgroundColor = UIColor.orangeColor;
     [self.view addSubview:view1];
     [view1.yoga configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.width = YGPointValue(160);
-        layout.height = YGPointValue(160);
+        layout.size = CGSizeMake(160, 160);
     }];
 }
 

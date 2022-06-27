@@ -31,8 +31,7 @@
         layout.flexWrap = YGWrapWrap;
         layout.paddingTop = YGPointValue(-spacing);
         layout.paddingLeft = YGPointValue(-spacing);
-        layout.width = YGPointValue(s * 3 + spacing * 2);
-        layout.height = YGPointValue(s * 3 + spacing * 2);
+        layout.size = CGSizeMake(s * 3 + spacing * 2, s * 3 + spacing * 2);
     }];
 
     for (NSInteger i = 0; i < 9; ++i) {
@@ -44,8 +43,7 @@
         [cell.yoga configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
             layout.marginTop = YGPointValue(spacing);
             layout.marginLeft = YGPointValue(spacing);
-            layout.width = YGPointValue(s);
-            layout.height = YGPointValue(s);
+            layout.size = CGSizeMake(s, s);
         }];
     }
 }
