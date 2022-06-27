@@ -56,6 +56,7 @@
     [nameContainer.yoga configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.alignSelf = YGAlignCenter;
         layout.flexGrow = 1;
+        layout.flexShrink = 1;
         layout.marginLeft = YGPointValue(12);
     }];
 
