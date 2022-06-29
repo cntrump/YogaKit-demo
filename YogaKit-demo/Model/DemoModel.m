@@ -9,14 +9,14 @@
 
 @implementation DemoModel
 
-+ (instancetype)modelWithTitle:(NSString *)title class:(Class)class {
-    return [[self alloc] initWithTitle:title class:class];
++ (instancetype)modelWithTitle:(NSString *)title class:(Class)vcClass {
+    return [[self alloc] initWithTitle:title class:vcClass];
 }
 
-- (instancetype)initWithTitle:(NSString *)title class:(Class)class {
+- (instancetype)initWithTitle:(NSString *)title class:(Class)vcClass {
     if (self = [super init]) {
         _title = [title copy];
-        _viewControllerClass = class;
+        _viewControllerClass = vcClass;
     }
 
     return self;

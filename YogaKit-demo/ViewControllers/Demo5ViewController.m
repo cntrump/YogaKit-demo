@@ -82,7 +82,7 @@
 - (void)handleKeyboardWillChangeFrameNotification:(NSNotification *)notification {
     NSDictionary *userInfo = notification.userInfo;
     CGRect frameEnd = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    UIViewAnimationCurve curve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
+    UIViewAnimationCurve curve = (UIViewAnimationCurve)[userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
     NSTimeInterval duration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
 
     CGFloat paddingBottom = CGRectGetHeight(self.view.bounds) - CGRectGetMinY(frameEnd);

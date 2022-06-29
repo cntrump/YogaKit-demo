@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, readonly) Class viewControllerClass;
 
-+ (instancetype)modelWithTitle:(NSString *)title class:(Class)class;
++ (instancetype)modelWithTitle:(NSString *)title class:(Class)vcClass;
 
 @end
 
