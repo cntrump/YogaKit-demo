@@ -5,7 +5,7 @@
 //  Created by v on 2022/6/24.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 NS_ASSUME_NONNULL_BEGIN
 
